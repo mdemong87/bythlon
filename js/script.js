@@ -75,7 +75,7 @@ scene.add(backLight);
 // Load the OBJ model
 var loader = new THREE.OBJLoader();
 loader.load(
-  'pro.obj',
+  './assest/vedio/pro.obj',
   function (object) {
     object.position = 60;
     scene.add(object);
