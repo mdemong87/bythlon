@@ -270,107 +270,191 @@ body {
     position: absolute;
     z-index: 1;
     top: 150px;
-    left: 258px;
-
+    left: 256px;
     padding: 5px 10px;
-    border-radius: 15px;
     cursor: pointer;
-    color: transparent;
+    display: flex;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
 }
 
-.div1:hover {
-    background: rgb(51, 51, 51);
-    color: #fff;
+.lineandtext1{
+    display:none;
+    gap: 5px;
+    align-items: center;
+    position: absolute;
+    z-index: 100;
+    width: 100px;
     width: fit-content;
+    top: 140px;
+    left: 280px;
 }
+.line{
+    height: 1px;
+    background: black;
+    width: 150px;
+}
+.divtext{
+    background: black;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.div1:hover+.lineandtext1{
+   display: flex;
+}
+
+
 
 .div2 {
     position: absolute;
     z-index: 1;
-    top: 290px;
-    left: 290px;
+    top: 288px;
+    left: 400px;
     width: fit-content;
     padding: 5px 10px;
-    border-radius: 15px;
     cursor: pointer;
-    color: transparent;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+
 }
 
-.div2:hover {
-    background: rgb(51, 51, 51);
-    color: #fff;
+.lineandtext2{
+    display:none;
+    gap: 5px;
+    align-items: center;
+    position: absolute;
+    z-index: 100;
+    width: fit-content;
+    top: 280px;
+    left: 425px;
 }
+
+.div2:hover+.lineandtext2{
+    display: flex;
+ }
 
 .div3 {
     position: absolute;
     z-index: 1;
     top: 285px;
-    left: -30px;
+    left: 105px;
     width: fit-content;
     padding: 5px 10px;
-    border-radius: 15px;
     cursor: pointer;
-    color: transparent;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
 }
 
-.div3:hover {
-    background: rgb(51, 51, 51);
-    color: #fff;
+
+.lineandtext3{
+    display:none;
+    gap: 5px;
+    align-items: center;
+    position: absolute;
+    z-index: 100;
+    width: fit-content;
+    top: 285px;
+    left: -190px;
 }
+
+.div3:hover+.lineandtext3{
+    display: flex;
+ }
+
 
 
 .div4 {
     position: absolute;
     z-index: 1;
-    top: 545px;
-    left: -60px;
+    top: 542px;
+    left: 68px;
     width: fit-content;
     padding: 5px 10px;
-    border-radius: 15px;
     cursor: pointer;
-    color: transparent;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
 }
 
-.div4:hover {
-    background: rgb(51, 51, 51);
-    color: #fff;
+
+.lineandtext4{
+    display:none;
+    gap: 5px;
+    align-items: center;
+    position: absolute;
+    z-index: 100;
+    width: fit-content;
+    top: 545px;
+    left: 92px;
 }
+
+.div4:hover+.lineandtext4{
+    display: flex;
+ }
 
 
 .div5 {
     position: absolute;
     z-index: 1;
     top: 475px;
-    left: 122px;
+    left: 395px;
     width: fit-content;
     padding: 5px 10px;
-    border-radius: 15px;
     cursor: pointer;
-    color: transparent;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
 }
 
-.div5:hover {
-    background: rgb(51, 51, 51);
-    color: #fff;
+
+.lineandtext5{
+    display:none;
+    gap: 5px;
+    align-items: center;
+    position: absolute;
+    z-index: 100;
+    width: fit-content;
+    top: 475px;
+    left: -50px;
 }
+
+.div5:hover+.lineandtext5{
+    display: flex;
+ }
 
 
 .div6 {
     position: absolute;
     z-index: 1;
     top: 640px;
-    left: 67px;
+    left: 225px;
     width: fit-content;
     padding: 5px 10px;
-    border-radius: 15px;
     cursor: pointer;
-    color: transparent;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
 }
 
-.div6:hover {
-    background: rgb(51, 51, 51);
-    color: #fff;
+
+.lineandtext6{
+    display:none;
+    gap: 5px;
+    align-items: center;
+    position: absolute;
+    z-index: 100;
+    width: fit-content;
+    top: 630px;
+    left: 257px;
 }
+
+.div6:hover+.lineandtext6{
+    display: flex;
+ }
 
 
 
