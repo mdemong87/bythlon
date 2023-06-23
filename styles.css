@@ -1,0 +1,864 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    animation: body 1s linear;
+    background-color: #fff2f2;
+    font-family: 'IBM Plex Sans', sans-serif;
+
+
+}
+
+:root * {
+    /* Pause the animation */
+    animation-play-state: paused;
+    /* Bind the animation to scroll */
+    animation-delay: calc(var(--scroll) * -1s);
+    /* These last 2 properites clean up overshoot weirdness */
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+
+.header {
+    width: 100%;
+    padding: 5px 0;
+}
+
+.headerWrper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 180px;
+}
+
+.navWrper>ul {
+    display: flex;
+    align-items: center;
+    grid-gap: 25px;
+    justify-content: center;
+    list-style: none;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.navLink {
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: all.3s;
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.navLink:hover {
+    background: #fc481d;
+    cursor: pointer;
+    color: #fff;
+}
+
+.cartWrper {
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.cartWrper>div {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.cartWrper:hover {
+    background: #fc481d;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+/* hero section css here */
+
+.heroWrper {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    height: 70vh;
+}
+
+.heroHeader {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.heroHeader>h1 {
+    color: #fc481d;
+    letter-spacing: 80px !important;
+    font-size: 200px !important;
+    z-index: 1;
+    text-align: center;
+}
+
+.herobgProduct {
+    height: 500px;
+    width: 500px;
+    z-index: -10;
+}
+
+.herobgProduct {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+
+/* 25% off section css start from here */
+.Off {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.offheading {
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.imageAndTopHeaderwtp {
+    display: flex;
+    grid-gap: 5px;
+    align-items: center;
+    margin-left: -8px;
+}
+
+.dot {
+    color: #fc481d;
+}
+
+.wordFistheader {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: rgb(61, 61, 61);
+}
+
+.incresseheader {
+    color: rgb(61, 61, 61);
+    font-weight: 500;
+}
+
+.discoutnbtnGroup {
+    display: flex;
+    align-items: center;
+    grid-gap: 20px;
+}
+
+
+.shopnowbtn {
+    padding: 10px 15px;
+    background: black;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 19px;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+
+.introvedio {
+    padding: 6px 15px;
+    border-radius: 25px;
+    border: 1px solid rgb(39, 39, 39);
+    outline: none;
+    color: black;
+    background: #fff2f2;
+    font-size: 19px;
+    margin: 20px 0px;
+    cursor: pointer;
+    display: flex;
+    grid-gap: 5px;
+    align-items: center;
+}
+
+.introvedio>img {
+    width: 30px;
+    height: 30px;
+}
+
+.playbtnHover {
+    height: 110px;
+    width: 220px;
+    display: block;
+    border-radius: 20px;
+    border: 1px solid red;
+    display: none;
+}
+
+.introvedio:hover .playbtnHover {
+    background: rebeccapurple;
+    display: block !important;
+}
+
+
+/* build for batter cycling css start from here */
+.buildforbatterCycling {
+    background: #fc481d;
+    color: #fff;
+    z-index: 100;
+}
+
+.buildingforcyclingWrper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+.buildLearnmorebtn {
+    background: #fff;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 18px;
+    border: none;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.buildingheader {
+    font-size: 80px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.builtImg {
+    height: 100%;
+    width: 570px;
+}
+
+.builtImageWrper {
+    position: relative;
+}
+
+.div1 {
+    position: absolute;
+    z-index: 1;
+    top: 150px;
+    left: 258px;
+
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: transparent;
+}
+
+.div1:hover {
+    background: rgb(51, 51, 51);
+    color: #fff;
+    width: fit-content;
+}
+
+.div2 {
+    position: absolute;
+    z-index: 1;
+    top: 290px;
+    left: 290px;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: transparent;
+}
+
+.div2:hover {
+    background: rgb(51, 51, 51);
+    color: #fff;
+}
+
+.div3 {
+    position: absolute;
+    z-index: 1;
+    top: 285px;
+    left: -30px;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: transparent;
+}
+
+.div3:hover {
+    background: rgb(51, 51, 51);
+    color: #fff;
+}
+
+
+.div4 {
+    position: absolute;
+    z-index: 1;
+    top: 545px;
+    left: -60px;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: transparent;
+}
+
+.div4:hover {
+    background: rgb(51, 51, 51);
+    color: #fff;
+}
+
+
+.div5 {
+    position: absolute;
+    z-index: 1;
+    top: 475px;
+    left: 122px;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: transparent;
+}
+
+.div5:hover {
+    background: rgb(51, 51, 51);
+    color: #fff;
+}
+
+
+.div6 {
+    position: absolute;
+    z-index: 1;
+    top: 640px;
+    left: 67px;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: transparent;
+}
+
+.div6:hover {
+    background: rgb(51, 51, 51);
+    color: #fff;
+}
+
+
+
+/* what makes section css code start from here */
+.whatmakes {
+    background: #fff2f2;
+    padding: 30px 0px;
+}
+
+.whatmakesWrperTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.whatmakesWrperTop>div {
+    width: 100%;
+}
+
+.whatmakesheadeing {
+    font-size: 80px;
+    font-weight: 500;
+    color: #fc481d;
+}
+
+.swiper {
+    width: 600px;
+    height: 400px;
+}
+
+.swiperImg {
+    height: 100%;
+}
+
+.swiper-button-prev {
+    color: #fc481d;
+}
+
+.swiper-button-next {
+    color: #fc481d;
+}
+
+.swiper-pagination-bullet {
+    background: #fc481d !important;
+}
+
+.discription {
+    padding-top: 70px;
+    width: 100%;
+}
+
+.diser {
+    height: 200px;
+    width: 100%;
+}
+
+.disWrper {
+    height: 100% !important;
+    width: 100%;
+}
+
+.disDis {
+    text-align: center;
+    font-size: 18px;
+    color: rgb(74, 74, 74);
+    width: 70%;
+    margin: auto;
+}
+
+
+
+/* patner section css code here */
+.patner {
+    background: #fff;
+    margin-bottom: -30px;
+}
+
+.patnerImg {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+/* sign up section start from here css code */
+.signUpSection {
+    background: #eeebeb;
+    padding: 30px 0px;
+}
+
+.SignupWrper>h1 {
+    font-size: 26px;
+    color: black;
+    font-weight: 500;
+}
+
+.SignupWrper>p {
+    font-size: 18px;
+    color: rgb(98, 98, 98);
+    padding-bottom: 30px;
+}
+
+.SignupWrper>input {
+    padding: 10px;
+    outline: none;
+    border: none;
+    background: #fff;
+    border-radius: 15px;
+    font-size: 17px;
+    width: 50%;
+}
+
+.SignupWrper>button {
+    background: #fc481d;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 25px;
+    padding: 8px;
+    font-size: 20px;
+}
+
+
+
+/* footer section css code here */
+.footer {
+    background: #fc481d;
+    height: fit-content;
+    width: 100%;
+    color: #fff;
+    padding: 50px 0px;
+}
+
+.footerHeader {
+    font-size: 220px;
+    text-align: center;
+    letter-spacing: 50px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+}
+
+.allpolicyWrp {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding-bottom: 30px;
+}
+
+.allpolicyWrp>div>ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    grid-gap: 20px;
+}
+
+.allpolicyWrp>div>ul>li>a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+
+
+/* faq section css code here */
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    padding: 20px 0px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.faqSection {
+    background: #e84118;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+/* FAQ Container */
+.faq-container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* FAQ Accordion */
+.accordion {
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    border-bottom: 1px solid #fa8568;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion:hover {
+    background-color: #fa603a;
+}
+
+.accordion.active {
+    background-color: #cb3a16;
+}
+
+/* FAQ Panel */
+.panel {
+    padding: 0px 18px;
+    background-color: #cb3a16;
+    color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.panel>p {
+    padding: 15px 0px;
+}
+
+.panel.show {
+    max-height: 500px;
+    /* Adjust the value to fit your content */
+}
+
+.plusIcon {
+    font-size: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* shop page css code start from here */
+
+/* shop item section css code */
+.shopSection {
+    padding: 60px 0px;
+}
+
+.shopHeaderWrp {
+    display: flex;
+    gap: 30px;
+}
+
+.shopHeaderWrp>h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #fc481d;
+    line-height: 50px;
+    font-weight: 500;
+}
+
+.shopHeaderWrp>div {
+    width: 100%;
+}
+
+.SingleShop {
+    width: 100%;
+    border-top: 2px solid #fc481d;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+}
+
+.firstclicd {
+    margin-top: 90px;
+}
+
+
+.singleshopheaderwrp>h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.singleshopheaderwrp>div {
+    font-size: 20px;
+    padding: 15px 0px;
+    display: flex;
+    gap: 10px;
+}
+
+/* //single shop item page css code here */
+.singlefrist {
+    border: none;
+    align-items: center !important;
+    padding: 0px;
+}
+
+.itemHeaderWrp {
+    width: 100%;
+    border-right: 1px solid #ff977c;
+    padding-right: 30px;
+}
+
+.shareandbackWrp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.backimg {
+    margin-left: -15px;
+}
+
+.itemHeaderWrp>h1 {
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-top: 10px;
+    color: #fc481d;
+}
+
+.itemHeaderWrp>p {
+    padding: 10px 0px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(46, 46, 46);
+}
+
+.singlesopPriceingGroup {
+    display: flex;
+    gap: 10px;
+    font-size: 25px;
+    color: #fc481d;
+    padding-top: 10px;
+}
+
+.itemHeaderWrp>small {
+    text-transform: uppercase;
+    color: #fc481d;
+    font-weight: 500;
+}
+
+.singleShopItemsButtonGroup {
+    padding-bottom: 20px;
+    padding-top: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+.singleShopItemsButtonGroup>button {
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.addtocartSingleshop {
+    background: black;
+    color: #fff;
+}
+
+.shoppaysingleShop {
+    border: 1px solid #fc481d !important;
+    background-color: #fff2f2;
+}
+
+.itemHeaderWrp>a {
+    font-size: 20px;
+    color: black;
+}
+
+.singeshopitemimg {
+    height: 100%;
+}
+
+
+/* about us page css code start from here */
+.aboutWrper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.aboutdetailseWrp>h1 {
+    color: #fc481d;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.aboutdetailseWrp>p {
+
+    color: #fc481d;
+    font-size: 18px;
+}
+
+.aboutdetailseWrp {
+    width: 60%;
+
+}
+
+.aboutheroWrp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.abouthero {
+    width: 70%;
+    border-radius: 15px;
+}
+
+.aboutheroWrp>h2 {
+    color: #fc481d;
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+
+.aboutheroWrp>p {
+    color: #fc481d;
+    text-transform: capitalize;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+.contactusinaboutWrp {
+    padding-top: 80px;
+}
+
+.contactusinaboutWrp>h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.contactusinaboutWrp>div {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+
+.contactusinaboutWrp>div>input {
+    padding: 15px;
+    width: 60%;
+    border-radius: 15px;
+    border: 1px solid #fc481d;
+    background: #fff;
+    color: black;
+    margin: 10px 0px;
+    font-size: 16px;
+
+}
+
+.contactusinaboutWrp>div>textarea {
+    padding: 15px;
+    width: 60%;
+    border-radius: 15px;
+    border: 1px solid #fc481d;
+    background: #fff;
+    color: black;
+    margin: 10px 0px;
+    height: 200px;
+    font-size: 16px;
+
+}
+
+.sendbuttbnaboutus {
+    padding: 13px 20px;
+    border-radius: 20px;
+    background: black;
+    color: #fff;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+}
