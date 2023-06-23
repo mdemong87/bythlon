@@ -7,16 +7,10 @@ function onScroll() {
   // Get the scroll position of the page
   const scrollY = window.scrollY;
 
-
   // Calculate the rotation amount based on the scroll position
-  // const rotationY = Math.PI * scrollY / 100; // Adjust the multiplier as needed
-
-  // const rotationX = 0.00001 * scrollY;
   const rotationZ = Math.PI * scrollY / 100;
 
   // Apply the rotation to the object
-  // camera.rotation.y = rotationY;
-  // camera.rotation.x = rotationX;
   camera.rotation.z = rotationZ;
 
 
@@ -127,6 +121,18 @@ const swiper = new Swiper('.swiper', {
 });
 
 
+
+//slide js implemention here
+document.addEventListener('DOMContentLoaded', function () {
+  var splide = new Splide('.splide', {
+    type: 'loop',
+    perPage: 4,
+    gap: 10,
+    pagination: false,
+    arrows: false
+  });
+  splide.mount();
+});
 
 
 
