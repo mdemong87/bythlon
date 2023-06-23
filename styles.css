@@ -440,7 +440,118 @@ body {
     margin: auto;
 }
 
+.disWrp {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.disWrp>div {
+    border-left: 1px solid black;
+    padding: 0px 20px;
+    width: 100%;
+}
+
+.one1 {
+    color: black;
+    font-weight: 500;
+}
+
+.two1 {
+    opacity: .40;
+}
+
+.three1 {
+    opacity: .40;
+}
+
+.one2 {
+    opacity: .40;
+}
+
+.two2 {
+    color: black;
+    font-weight: 500;
+}
+
+.three2 {
+    opacity: .40;
+}
+
+.one3 {
+    opacity: .40;
+}
+
+.two3 {
+    opacity: .40;
+}
+
+.three3 {
+    color: black;
+    font-weight: 500;
+}
+
+.one4 {
+    opacity: .40;
+}
+
+.two4 {
+    opacity: .40;
+}
+
+.three4 {
+    color: black;
+    font-weight: 500;
+}
+
+.two1:hover {
+    color: black;
+    font-weight: 500;
+    opacity: 1;
+}
+
+.three1:hover {
+    opacity: 1;
+    color: black;
+    font-weight: 500;
+}
+
+.one2:hover {
+    color: black;
+    font-weight: 500;
+    opacity: 1;
+}
+
+.three2:hover {
+    opacity: 1;
+    color: black;
+    font-weight: 500;
+}
+
+.one3:hover {
+    color: black;
+    font-weight: 500;
+    opacity: 1;
+}
+
+.two3:hover {
+    opacity: 1;
+    color: black;
+    font-weight: 500;
+}
+
+.one4:hover {
+    color: black;
+    font-weight: 500;
+    opacity: 1;
+}
+
+.two4:hover {
+    opacity: 1;
+    color: black;
+    font-weight: 500;
+}
 
 /* patner section css code here */
 .patner {
@@ -464,6 +575,7 @@ body {
     background: #fff2f2;
     margin-bottom: -23px;
     padding-bottom: 40px;
+
 }
 
 .reviewswrp>h1 {
@@ -489,14 +601,15 @@ body {
 
 
 .feedbackWrpinreview>div {
-    border: 1px solid rgb(255, 181, 181);
     width: 100%;
-    text-align: center;
     border-radius: 10px;
     height: fit-content;
     min-height: 270px;
     padding-bottom: 10px;
     padding-top: 15px;
+    padding-left: 5px;
+    text-align: center;
+    padding-right: 5px;
     cursor: pointer;
 }
 
@@ -526,7 +639,7 @@ body {
     font-size: 30px;
     font-weight: 500;
     padding: 13px 0px;
-    color: rgb(100, 100, 100);
+    color: black;
 }
 
 .reviewDis {

@@ -101,7 +101,15 @@ onScroll();
 
 
 
+
+
+
+
+
+
 //swiper js implementation code here
+
+//this is just for what makes bythlon batter
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   loop: true,
@@ -117,7 +125,6 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
-
 
 
 
