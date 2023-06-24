@@ -104,9 +104,10 @@ onScroll();
 //swiper js implementation code here
 
 //this is just for what makes bythlon batter
-const swiper = new Swiper('.swiper', {
+var swiper = new Swiper('.swiper', {
   // Optional parameters
   loop: true,
+  noSwipingClass: 'noswipe',
 
   // If we need pagination
   pagination: {
@@ -119,6 +120,77 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+//text click to slide
+function one1(){
+  swiper[0].slideTo(0, 1000, false);
+  swiper[1].slideTo(0, 1000, false)
+}
+
+
+function two1(){
+  swiper[0].slideTo(1, 1000, false);
+  swiper[1].slideTo(1, 1000, false);
+}
+
+
+function three1(){
+  swiper[0].slideTo(2, 1000, false);
+  swiper[1].slideTo(2, 1000, false);
+}
+
+function one2(){
+  swiper[0].slideTo(0, 1000, false);
+  swiper[1].slideTo(0, 1000, false)
+}
+
+
+function two2(){
+  swiper[0].slideTo(1, 1000, false);
+  swiper[1].slideTo(1, 1000, false);
+}
+
+
+function three2(){
+  swiper[0].slideTo(2, 1000, false);
+  swiper[1].slideTo(2, 1000, false);
+}
+
+
+function one3(){
+  swiper[0].slideTo(0, 1000, false);
+  swiper[1].slideTo(0, 1000, false)
+}
+
+
+function two3(){
+  swiper[0].slideTo(1, 1000, false);
+  swiper[1].slideTo(1, 1000, false);
+}
+
+
+function three3(){
+  swiper[0].slideTo(2, 1000, false);
+  swiper[1].slideTo(2, 1000, false);
+}
+
+function one4(){
+  swiper[0].slideTo(1, 1000, false);
+  swiper[1].slideTo(1, 1000, false)
+}
+
+
+function two4(){
+  swiper[0].slideTo(2, 1000, false);
+  swiper[1].slideTo(2, 1000, false);
+}
+
+
+function three4(){
+  swiper[0].slideTo(3, 1000, false);
+  swiper[1].slideTo(3, 1000, false);
+}
+
 
 
 

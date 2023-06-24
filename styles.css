@@ -115,17 +115,13 @@ body {
 }
 
 .herobgProduct {
-    height: 500px;
-    width: 500px;
+    height: 100%;
+    width: 100%;
     z-index: -10;
-}
-
-.herobgProduct {
     position: fixed;
     top: 0;
     left: 0;
 }
-
 
 
 /* 25% off section css start from here */
