@@ -11,17 +11,24 @@ function onScroll() {
   const rotationZ = Math.PI * scrollY / 100;
 
   // Apply the rotation to the object
-  camera.rotation.z = rotationZ;
+  camera.rotation.z =rotationZ;
 
 
   if (scrollY > 300) {
-    camera.rotation.z = 0;
+    camera.rotation.z = 250;
     camera.rotation.x = scrollY * 0.0001;
     camera.rotation.y = scrollY * 0.0001;
     ThreeModel.style.transform = "translate(150px)";
   }
+  if (scrollY > 1000) {
+    ThreeModel.style.display="none";
+  }
+  if (scrollY < 1000) {
+    ThreeModel.style.display="block";
+  }
   if (scrollY < 300) {
     ThreeModel.style.transform = "translate(0px)";
+    camera.rotation.y +=0.0020;
   }
 
   // Render the scene with the updated rotation
@@ -91,12 +98,6 @@ function animate() {
 
 animate();
 onScroll();
-
-
-
-
-
-
 
 
 
@@ -201,7 +202,21 @@ document.addEventListener('DOMContentLoaded', function () {
     perPage: 4,
     gap: 10,
     pagination: false,
-    arrows: false
+    arrows: false,
+    breakpoints: {
+      640: {
+        perPage: 1,
+  
+      },
+      767: {
+        perPage: 2,
+    
+      },
+      1024: {
+        perPage: 3,
+       
+      },
+    },
   });
   splide.mount();
 });
@@ -310,3 +325,31 @@ splide__slide6.addEventListener("mouseover", () => {
 splide__slide6.addEventListener("mouseout", () => {
   slideimage.style.visibility = "hidden";
 })
+
+
+
+
+
+
+//navber script here
+const navber=document.querySelector(".berJustshowmobile");
+const navaside=document.querySelector(".noneformobile");
+
+navber.addEventListener("click",()=>{
+
+  if (navaside.style.display === "none") {
+    navaside.style.display = "block";
+  } else {
+    navaside.style.display = "none";
+  }
+});
+
+window.addEventListener("resize",()=>{
+  if( window.innerWidth > "768"){
+    navaside.style.display = "block";
+  }else{
+    navaside.style.display = "none";
+  }
+})
+
+

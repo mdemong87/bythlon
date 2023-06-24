@@ -13,6 +13,16 @@ body {
 
 }
 
+:root * {
+    /* Pause the animation */
+    animation-play-state: paused;
+    /* Bind the animation to scroll */
+    animation-delay: calc(var(--scroll) * -1s);
+    /* These last 2 properites clean up overshoot weirdness */
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
 .container {
     width: 85%;
     margin: auto;
@@ -33,17 +43,6 @@ body {
 
 .logo {
     width: 180px;
-}
-.berJustshowmobile{
-    display: none;
-}
-.navicon{
-    width: 65px;
-    height: 45px;
-    background: #fc481d;
-    border-radius: 20px;
-    padding: 10px;
-    cursor: pointer;
 }
 
 .navWrper>ul {
@@ -109,9 +108,10 @@ body {
 
 .heroHeader>h1 {
     color: #fc481d;
+    letter-spacing: 80px !important;
+    font-size: 200px !important;
     z-index: 1;
     text-align: center;
-    font-weight: 400;
 }
 
 .herobgProduct {
@@ -485,6 +485,7 @@ body {
 
 .swiperImg {
     height: 100%;
+    width: 100%;
 }
 
 .swiper-button-prev {
@@ -663,7 +664,6 @@ body {
 
 .reviewTopWrper {
     display: flex;
-    gap: 10px;
 }
 
 .reviewTopWrper>div {
@@ -827,7 +827,9 @@ body {
 }
 
 .footerHeader {
+    font-size: 220px;
     text-align: center;
+    letter-spacing: 50px;
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 400;
 }
@@ -1193,211 +1195,3 @@ body {
 
 
 
-
-
-
-
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 425px) {
-    .cartWrper{
-        margin-left: 50px;
-    }
-
-
-}
-
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .cartWrper{
-        margin-left: 50px;
-    }
-    .singleshopheaderwrp{
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 768px) {
-
-
-    .heroHeader>h1{
-        overflow-x: hidden;
-        font-size: medium!important;
-    }
-    .footerHeader{
-        overflow-x: hidden;
-    }
-
-    .herobgProduct{
-        display: none;
-    }
-    .reviewTopWrper{
-        flex-direction: column;
-        gap: 10px;
-    }
-    .swiper{
-        width: 100%;
-    }
-    .swiper-wrapper{
-        width: 100%;
-    }
-    .swiper-slide{
-        width: 100%;
-    }
-    .swiperImg{
-        width: 100%;
-    }
-    .builtImg{
-        width: 100%;
-    }
-    .allpolicyWrp{
-        flex-direction: column;
-    }
-    .allpolicyWrp>div>ul{
-        flex-direction: column;
-    }
-
-    .noneformobile{
-        display: none;
-        position: absolute;
-        width: 250px;
-        top: 0;
-        left: 0;
-        z-index: 99;
-    }
-    .navWrper>ul{
-        flex-direction: column;
-        padding-top: 50px;
-        padding-bottom: 200px;
-        border-radius: 0px;
-        background: #ff977c;
-    }
-
-    .berJustshowmobile{
-        display: block;
-    }
-    .cartWrper{
-        margin-left: 60px;
-    }
-    .shopHeaderWrp{
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: centers;
-    }
-    .SingleShop{
-        flex-direction: column;
-    }
-    .singleshopimagewrp{
-        width: 100%;
-    }
-    .singleshopimagewrp>img{
-        width: 100%;
-    }
-    .singlefrist{
-        flex-direction: column-reverse!important;
-    }
-    .aboutWrper{
-        flex-direction: column-reverse;
-        text-align: center;
-        align-items: center;
-    }
-    .aboutdetailseWrp>h1{
-        font-size: 40px!important;
-    }
-    .contactusinaboutWrp{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .contactusinaboutWrp>button{
-        width: 60%;
-    }
-    .contactusinaboutWrp>div>input{
-        width: 100%!important;
-    }
-    .contactusinaboutWrp>div>textarea{
-        width: 100%!important;
-    }
-}
-
-
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 900px) {
-
-    .heroHeader>h1{
-        font-size: 117px!important;
-        letter-spacing:27px!important;
-    }
-    .footerHeader{
-        font-size: 117px!important;
-        letter-spacing:27px!important;
-    }
-    .allpolicyWrp>div>ul{
-        flex-direction: column;
-    }
-}
-
-
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 1024px) {
-
-    .heroHeader>h1{
-        font-size: 135px!important;
-        letter-spacing:45px;
-    }
-    .footerHeader{
-        font-size: 135px!important;
-        letter-spacing:45px;
-    }
-
-
-    .buildingforcyclingWrper{
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .whatmakesWrperTop{
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-}
-
-
-
-@media only screen and (max-width: 1300px) {
-
-    .heroHeader>h1{
-        font-size: 160px!important;
-        letter-spacing:60px;
-    }
-    .footerHeader{
-        font-size: 160px;
-        letter-spacing:60px;
-    }
-}
-
-
-@media only screen and (min-width: 1300px) {
-
-    .heroHeader>h1{
-        font-size: 200px!important;
-        letter-spacing:80px;
-    }
-    .footerHeader{
-        font-size: 200px;
-        letter-spacing:80px;
-    }
-}
