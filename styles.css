@@ -275,8 +275,8 @@ body {
     border-radius: 50%;
 }
 
-.lineandtext1{
-    display:none;
+.lineandtext1 {
+    display: none;
     gap: 5px;
     align-items: center;
     position: absolute;
@@ -286,19 +286,21 @@ body {
     top: 140px;
     left: 280px;
 }
-.line{
+
+.line {
     height: 1px;
     background: black;
     width: 150px;
 }
-.divtext{
+
+.divtext {
     background: black;
     padding: 5px;
     border-radius: 10px;
 }
 
-.div1:hover+.lineandtext1{
-   display: flex;
+.div1:hover+.lineandtext1 {
+    display: flex;
 }
 
 
@@ -317,8 +319,8 @@ body {
 
 }
 
-.lineandtext2{
-    display:none;
+.lineandtext2 {
+    display: none;
     gap: 5px;
     align-items: center;
     position: absolute;
@@ -328,9 +330,9 @@ body {
     left: 425px;
 }
 
-.div2:hover+.lineandtext2{
+.div2:hover+.lineandtext2 {
     display: flex;
- }
+}
 
 .div3 {
     position: absolute;
@@ -346,8 +348,8 @@ body {
 }
 
 
-.lineandtext3{
-    display:none;
+.lineandtext3 {
+    display: none;
     gap: 5px;
     align-items: center;
     position: absolute;
@@ -357,9 +359,9 @@ body {
     left: -190px;
 }
 
-.div3:hover+.lineandtext3{
+.div3:hover+.lineandtext3 {
     display: flex;
- }
+}
 
 
 
@@ -377,8 +379,8 @@ body {
 }
 
 
-.lineandtext4{
-    display:none;
+.lineandtext4 {
+    display: none;
     gap: 5px;
     align-items: center;
     position: absolute;
@@ -388,9 +390,9 @@ body {
     left: 92px;
 }
 
-.div4:hover+.lineandtext4{
+.div4:hover+.lineandtext4 {
     display: flex;
- }
+}
 
 
 .div5 {
@@ -407,8 +409,8 @@ body {
 }
 
 
-.lineandtext5{
-    display:none;
+.lineandtext5 {
+    display: none;
     gap: 5px;
     align-items: center;
     position: absolute;
@@ -418,9 +420,9 @@ body {
     left: -50px;
 }
 
-.div5:hover+.lineandtext5{
+.div5:hover+.lineandtext5 {
     display: flex;
- }
+}
 
 
 .div6 {
@@ -437,8 +439,8 @@ body {
 }
 
 
-.lineandtext6{
-    display:none;
+.lineandtext6 {
+    display: none;
     gap: 5px;
     align-items: center;
     position: absolute;
@@ -448,9 +450,9 @@ body {
     left: 257px;
 }
 
-.div6:hover+.lineandtext6{
+.div6:hover+.lineandtext6 {
     display: flex;
- }
+}
 
 
 
@@ -659,13 +661,21 @@ body {
 
 }
 
-.reviewswrp>h1 {
+.reviewTopWrper {
+    display: flex;
+}
+
+.reviewTopWrper>div {
+    width: 100%;
+}
+
+.reviewTopWrper>div>h1 {
     font-size: 60px;
     font-weight: 500;
     color: #fc481d;
 }
 
-.reviewswrp>span {
+.reviewTopWrper>div>span {
     font-size: 20px;
     font-weight: 500;
 }
@@ -695,17 +705,20 @@ body {
 
 .splide__slide {
     text-align: center;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-
+    text-align: left;
 }
 
 .splide__slide:hover {
-    background: #f9e0e0;
+    background: #ffeded;
 }
 
 .splide__slide:hover .star {
@@ -720,19 +733,15 @@ body {
 
 
 .slideVedio {
-    display: none;
+    visibility: hidden;
 }
 
 .slideimage {
-    width: 100% !important;
+    height: 250px !important;
+    width: 500px;
     margin: auto;
     border-radius: 12px;
 }
-
-.splide__slide:hover .slideVedio {
-    display: block;
-}
-
 
 .feedbackWrpinreview>div:hover .reviewHead {
     color: black !important;

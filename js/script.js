@@ -122,71 +122,71 @@ var swiper = new Swiper('.swiper', {
 });
 
 //text click to slide
-function one1(){
+function one1() {
   swiper[0].slideTo(0, 1000, false);
   swiper[1].slideTo(0, 1000, false)
 }
 
 
-function two1(){
+function two1() {
   swiper[0].slideTo(1, 1000, false);
   swiper[1].slideTo(1, 1000, false);
 }
 
 
-function three1(){
+function three1() {
   swiper[0].slideTo(2, 1000, false);
   swiper[1].slideTo(2, 1000, false);
 }
 
-function one2(){
+function one2() {
   swiper[0].slideTo(0, 1000, false);
   swiper[1].slideTo(0, 1000, false)
 }
 
 
-function two2(){
+function two2() {
   swiper[0].slideTo(1, 1000, false);
   swiper[1].slideTo(1, 1000, false);
 }
 
 
-function three2(){
+function three2() {
   swiper[0].slideTo(2, 1000, false);
   swiper[1].slideTo(2, 1000, false);
 }
 
 
-function one3(){
+function one3() {
   swiper[0].slideTo(0, 1000, false);
   swiper[1].slideTo(0, 1000, false)
 }
 
 
-function two3(){
+function two3() {
   swiper[0].slideTo(1, 1000, false);
   swiper[1].slideTo(1, 1000, false);
 }
 
 
-function three3(){
+function three3() {
   swiper[0].slideTo(2, 1000, false);
   swiper[1].slideTo(2, 1000, false);
 }
 
-function one4(){
+function one4() {
   swiper[0].slideTo(1, 1000, false);
   swiper[1].slideTo(1, 1000, false)
 }
 
 
-function two4(){
+function two4() {
   swiper[0].slideTo(2, 1000, false);
   swiper[1].slideTo(2, 1000, false);
 }
 
 
-function three4(){
+function three4() {
   swiper[0].slideTo(3, 1000, false);
   swiper[1].slideTo(3, 1000, false);
 }
@@ -236,3 +236,77 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+
+
+
+
+//review section view image when hover javascript code here
+const splide__slide1 = document.querySelector(".r1");
+const splide__slide2 = document.querySelector(".r2");
+const splide__slide3 = document.querySelector(".r3");
+const splide__slide4 = document.querySelector(".r4");
+const splide__slide5 = document.querySelector(".r5");
+const splide__slide6 = document.querySelector(".r6");
+const slideimage = document.querySelector(".slideimage");
+
+
+//for 1
+splide__slide1.addEventListener("mouseover", () => {
+  slideimage.style.visibility = "visible";
+  slideimage.src = "./assest/img/slideImage1.jpg";
+})
+
+splide__slide1.addEventListener("mouseout", () => {
+  slideimage.style.visibility = "hidden";
+})
+
+//for 2
+splide__slide2.addEventListener("mouseover", () => {
+  slideimage.style.visibility = "visible";
+  slideimage.src = "./assest/img/slideImage2.jpg";
+})
+
+splide__slide2.addEventListener("mouseout", () => {
+  slideimage.style.visibility = "hidden";
+})
+
+//for 3
+splide__slide3.addEventListener("mouseover", () => {
+  slideimage.style.visibility = "visible";
+  slideimage.src = "./assest/img/slideImage3.jpg";
+})
+
+splide__slide3.addEventListener("mouseout", () => {
+  slideimage.style.visibility = "hidden";
+})
+
+//for 4
+splide__slide4.addEventListener("mouseover", () => {
+  slideimage.style.visibility = "visible";
+  slideimage.src = "./assest/img/slideImage4.jpg";
+})
+
+splide__slide4.addEventListener("mouseout", () => {
+  slideimage.style.visibility = "hidden";
+})
+
+//for 5
+splide__slide5.addEventListener("mouseover", () => {
+  slideimage.style.visibility = "visible";
+  slideimage.src = "./assest/img/slideImage5.jpg";
+})
+
+splide__slide5.addEventListener("mouseout", () => {
+  slideimage.style.visibility = "hidden";
+})
+
+//for 6
+splide__slide6.addEventListener("mouseover", () => {
+  slideimage.style.visibility = "visible";
+  slideimage.src = "./assest/img/slideImage6.jpg";
+})
+
+splide__slide6.addEventListener("mouseout", () => {
+  slideimage.style.visibility = "hidden";
+})
