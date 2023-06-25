@@ -4,31 +4,30 @@ window.addEventListener('scroll', onScroll);
 var ThreeModel = document.querySelector(".herobgProduct");
 
 function onScroll() {
+
+  
+
   // Get the scroll position of the page
   const scrollY = window.scrollY;
 
   // Calculate the rotation amount based on the scroll position
-  const rotationZ = Math.PI * scrollY / 100;
+  const rotationX = Math.PI * scrollY / 100;
+  scene.rotation.z = 0
 
   // Apply the rotation to the object
-  camera.rotation.z =rotationZ;
-
+  scene.rotation.x =rotationX/2;
+  
 
   if (scrollY > 300) {
-    camera.rotation.z = 250;
-    camera.rotation.x = scrollY * 0.0001;
-    camera.rotation.y = scrollY * 0.0001;
-    ThreeModel.style.transform = "translate(150px)";
-  }
-  if (scrollY > 1000) {
-    ThreeModel.style.display="none";
-  }
-  if (scrollY < 1000) {
-    ThreeModel.style.display="block";
-  }
-  if (scrollY < 300) {
+    scene.rotation.x =0;
+    scene.rotation.z=190;
+    scene.rotation.y=50;//50
+    ThreeModel.style.transform = "translate(240px)";
+    ThreeModel.style.transition = "1s";
+  }else{
+    scene.rotation.z=0;
+    scene.rotation.y=0;
     ThreeModel.style.transform = "translate(0px)";
-    camera.rotation.y +=0.0020;
   }
 
   // Render the scene with the updated rotation
@@ -45,7 +44,7 @@ scene.background = new THREE.Color("rgb(255, 242, 242)");
 
 // Create a camera
 var camera = new THREE.PerspectiveCamera(
-  45,
+  50,
   window.innerWidth / window.innerHeight,
   0.1,
   1000
@@ -59,13 +58,13 @@ document.getElementById('model-viewer').appendChild(renderer.domElement);
 
 
 const keyLight = new THREE.DirectionalLight(1.0);
-keyLight.position.set(-100, 0, 100);
+keyLight.position.set(100, 0, -100);
 
-const fillLight = new THREE.DirectionalLight(0.75);
+const fillLight = new THREE.DirectionalLight(0,75);
 fillLight.position.set(-100, 0, 100);
 
 
-const backLight = new THREE.DirectionalLight(0xffffff, 1.0);
+const backLight = new THREE.DirectionalLight('rgb(105,105,105)', 1.0);
 backLight.position.set(100, 0, -100);
 
 scene.add(keyLight);
@@ -92,7 +91,7 @@ loader.load(
 // Animation loop
 function animate() {
   requestAnimationFrame(animate);
-  camera.rotation.z -= 0.0020
+  scene.rotation.z += 0.0020
   renderer.render(scene, camera);
 }
 
@@ -351,5 +350,6 @@ window.addEventListener("resize",()=>{
     navaside.style.display = "none";
   }
 })
+
 
 

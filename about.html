@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
@@ -156,7 +156,31 @@
         </section>
         <!-- footer section end from here -->
     </main>
-    <script src="./js/script.js"></script>
+    <script>
+
+        //navber script here
+        const navber=document.querySelector(".berJustshowmobile");
+        const navaside=document.querySelector(".noneformobile");
+        
+        navber.addEventListener("click",()=>{
+        
+          if (navaside.style.display === "none") {
+            navaside.style.display = "block";
+          } else {
+            navaside.style.display = "none";
+          }
+        });
+        
+        window.addEventListener("resize",()=>{
+          if( window.innerWidth > "768"){
+            navaside.style.display = "block";
+          }else{
+            navaside.style.display = "none";
+          }
+        })
+        
+        
+            </script>
 </body>
 
 </html>
