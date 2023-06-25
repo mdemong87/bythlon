@@ -22,7 +22,7 @@ function onScroll() {
     scene.rotation.x =0;
     scene.rotation.z=190;
     scene.rotation.y=50;//50
-    ThreeModel.style.transform = "translate(240px)";
+    ThreeModel.style.transform = "translate(20%)";
     ThreeModel.style.transition = "1s";
   }else{
     scene.rotation.z=0;
