@@ -19,16 +19,19 @@ function onScroll() {
     camera.rotation.z=109.96;
   }
 
-
   if (scrollY > 340) {
     scene.rotation.x =0;
     scene.rotation.z=190.03;
     scene.rotation.y=49.890;
     camera.rotation.z=0;
+    ThreeModel.style.transform="translate(20%)";
+    ThreeModel.style.transition="1s";
+    
   }else{
     scene.rotation.z=0;
     scene.rotation.y=0;
     camera.rotation.z=109.96;
+    ThreeModel.style.transform="translate(0%)";
   }
 
   // Render the scene with the updated rotation
