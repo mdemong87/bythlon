@@ -5,29 +5,30 @@ var ThreeModel = document.querySelector(".herobgProduct");
 
 function onScroll() {
 
-  
-
   // Get the scroll position of the page
   const scrollY = window.scrollY;
 
   // Calculate the rotation amount based on the scroll position
   const rotationX = Math.PI * scrollY / 100;
-  scene.rotation.z = 0
 
   // Apply the rotation to the object
   scene.rotation.x =rotationX/2;
-  
 
-  if (scrollY > 300) {
+  if(scrollY === 0){
+    scene.rotation.x=2.60;
+    camera.rotation.z=109.96;
+  }
+
+
+  if (scrollY > 340) {
     scene.rotation.x =0;
-    scene.rotation.z=190;
-    scene.rotation.y=50;//50
-    ThreeModel.style.transform = "translate(20%)";
-    ThreeModel.style.transition = "1s";
+    scene.rotation.z=190.03;
+    scene.rotation.y=49.890;
+    camera.rotation.z=0;
   }else{
     scene.rotation.z=0;
     scene.rotation.y=0;
-    ThreeModel.style.transform = "translate(0px)";
+    camera.rotation.z=109.96;
   }
 
   // Render the scene with the updated rotation
@@ -50,6 +51,9 @@ var camera = new THREE.PerspectiveCamera(
   1000
 );
 camera.position.z = 170;
+
+// camera.rotation.z=150;
+
 
 // Create a renderer
 var renderer = new THREE.WebGLRenderer();
@@ -91,7 +95,6 @@ loader.load(
 // Animation loop
 function animate() {
   requestAnimationFrame(animate);
-  scene.rotation.z += 0.0020
   renderer.render(scene, camera);
 }
 
