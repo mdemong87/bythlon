@@ -263,6 +263,14 @@ body {
     position: relative;
 }
 
+/* .hoverLineText{
+    position: absolute;
+    border: 1px solid #ddd;
+    width: 100%;
+    left: 0%;
+    transform: translateX(50%);
+} */
+
 .div1 {
     position: absolute;
     z-index: 1;
@@ -832,6 +840,9 @@ body {
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 400;
 }
+.footerHeadertow{
+    display: none;
+}
 
 .allpolicyWrp {
     display: flex;
@@ -1204,6 +1215,13 @@ body {
     .cartWrper{
         margin-left: 50px;
     }
+    .footerHeadertow{
+        display: block;
+        font-size: 30px!important;
+        text-align: center;
+        font-weight: 400;
+        letter-spacing:15px!important;
+    }
 
 
 }
@@ -1220,6 +1238,13 @@ body {
         flex-direction: column;
         align-items: center;
     }
+    .footerHeadertow{
+        display: block;
+        font-size: 65px!important;
+        text-align: center;
+        font-weight: 400;
+        letter-spacing:25px;
+    }
 
 
 }
@@ -1231,9 +1256,22 @@ body {
     .heroHeader>h1{
         overflow-x: hidden;
         font-size: medium!important;
+        display: none;
+    }
+    .heroHeader>h3{
+        color: #fc481d;
     }
     .footerHeader{
         overflow-x: hidden;
+        border: 1px solid #fff;
+        display: none;
+    }
+    .footerHeadertow{
+        display: block;
+        font-size: 90px;
+        text-align: center;
+        font-weight: 400;
+        letter-spacing:30px;
     }
 
     .herobgProduct{
