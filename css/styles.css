@@ -753,11 +753,12 @@ body {
 
 .slideVedio {
     visibility: hidden;
+    width: 100%;
 }
 
 .slideimage {
     height: 250px !important;
-    width: 500px;
+    width: 100%;
     margin: auto;
     border-radius: 12px;
 }
@@ -1291,6 +1292,43 @@ body {
     }
 
 
+    
+    .playbtnHover {
+        height: 110px;
+        width: 250px;
+        display: none;
+        position: absolute;
+        left: 100px!important;
+        transform: translateY(-100px);
+    }
+
+
+    .two1{
+        display:none;
+    }
+    .three1{
+        display: none;
+    }
+
+    .one2{
+        display:none;
+    }
+    .three2{
+        display: none;
+    }
+
+    .one3{
+        display:none;
+    }
+    .two3{
+        display: none;
+    }
+    .one4{
+        display:none;
+    }
+    .two4{
+        display: none;
+    }
 
 
 
@@ -1321,9 +1359,9 @@ body {
         letter-spacing:30px;
     }
 
-    .herobgProduct{
+    /* .herobgProduct{
         display: none;
-    }
+    } */
     .reviewTopWrper{
         flex-direction: column;
         gap: 10px;
@@ -1448,6 +1486,31 @@ body {
         font-size: 50px;
     }
 
+    
+    .playbtnHover {
+        height: 110px;
+        width: 250px;
+        display: none;
+        position: absolute;
+        left: 350px;
+    }
+
+
+    .three1{
+        display: none;
+    }
+
+    .one2{
+        display: none;
+    }
+
+    .one3{
+        display: none;
+    }
+
+    .one4{
+        display: none;
+    }
 
 }
 
@@ -1488,6 +1551,7 @@ body {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        gap: 50px;
     }
 
     .whatmakesWrperTop{
