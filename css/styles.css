@@ -1271,6 +1271,28 @@ body {
         letter-spacing:25px;
     }
 
+    .offheading {
+        font-size: 50px!important;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    .whatmakesheadeing {
+        font-size: 50px!important;
+    }
+    .buildingheader {
+        font-size: 50px!important;
+    }
+
+
+    
+    .reviewTopWrper>div>h1 {
+        font-size: 40px!important;
+    }
+
+
+
+
 
 }
 
@@ -1337,13 +1359,13 @@ body {
         z-index: 99;
     }
 
-.blockForMobile{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: fit-content;
-    gap: 10px;
-}
+    .blockForMobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: fit-content;
+        gap: 10px;
+    }
 
     .navWrper>ul{
         flex-direction: column;
@@ -1400,6 +1422,33 @@ body {
     .contactusinaboutWrp>div>textarea{
         width: 100%!important;
     }
+
+
+    .offheading {
+        font-size: 60px;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+
+
+    .whatmakesheadeing {
+        font-size: 60px;
+    }
+
+
+    .buildingheader {
+        font-size: 60px;
+    }
+
+
+
+
+    .reviewTopWrper>div>h1 {
+        font-size: 50px;
+    }
+
+
 }
 
 
