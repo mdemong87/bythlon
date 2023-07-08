@@ -11,8 +11,8 @@ body {
     width: 100%;
 
     -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 .main{
    width: 100%;
@@ -22,6 +22,7 @@ body {
 
 .container {
     width: 85%;
+    max-width: 1170px;
     margin: auto;
 }
 
@@ -114,6 +115,7 @@ body {
     height: 70vh;
 }
 
+
 .heroHeader {
     position: absolute;
     width: 100%;
@@ -134,7 +136,6 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    /* transform: translateX(20%); */
 }
 
 
@@ -274,6 +275,7 @@ body {
 
 .builtImageWrper {
     position: relative;
+    transform: translateX(30px);
 }
 
 /* .hoverLineText{
@@ -1589,5 +1591,101 @@ body {
     .footerHeader{
         font-size: 200px;
         letter-spacing:80px;
+    }
+
+
+    .builtImageWrper {
+        transform: translateX(30px);
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+
+    .builtImageWrper {
+        transform: translateX(25px);
+    }
+}
+
+
+@media only screen and (min-width: 1500px) {
+
+    .builtImageWrper {
+        transform: translateX(110px)!important;
+    }
+    .builtImg {
+        width: 680px;
+    }
+}
+
+ @media only screen and (min-width: 1700px) {
+    .builtImg {
+        width: 700px;
+    }
+} 
+
+@media only screen and (min-width: 1800px) {
+
+    .builtImageWrper {
+        transform: translateX(170px)!important;
+    }
+    .builtImg {
+        width:780px;
+    }
+} 
+
+@media only screen and (min-width: 1900px) {
+
+    .builtImageWrper {
+        transform: translateX(170px)!important;
+    }
+    .builtImg {
+        width:820px;
+    }
+} 
+
+@media only screen and (min-width: 2100px) {
+
+    .builtImageWrper {
+        transform: translateX(220px)!important;
+    }
+}
+
+@media only screen and (min-width: 2200px) {
+
+    .builtImageWrper {
+        transform: translateX(190px)!important;
+    }
+    .builtImg {
+        width:920px;
+    }
+}
+@media only screen and (min-width: 2300px) {
+
+    .builtImageWrper {
+        transform: translateX(200px)!important;
+    }
+    .builtImg {
+        width:950px;
+    }
+}
+
+@media only screen and (min-width: 2400px) {
+
+    .builtImageWrper {
+        transform: translateX(200px)!important;
+    }
+    .builtImg {
+        width:1000px;
+    }
+}
+
+
+@media only screen and (min-width: 2500px) {
+
+    .builtImageWrper {
+        transform: translateX(200px)!important;
+    }
+    .builtImg {
+        width:1100px;
     }
 }
