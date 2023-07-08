@@ -9,6 +9,10 @@ body {
     background-color: #fff2f2;
     font-family: 'IBM Plex Sans', sans-serif;
     width: 100%;
+
+    -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 .main{
    width: 100%;

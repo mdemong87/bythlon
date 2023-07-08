@@ -34,6 +34,12 @@ function onScroll() {
     ThreeModel.style.transform="translate(0%)";
   }
 
+  if(scrollY > 250 && window.innerWidth < 600){
+    ThreeModel.style.display="none";
+  }else{
+    ThreeModel.style.display="block";
+  }
+
   // Render the scene with the updated rotation
   renderer.render(scene, camera);
 }
@@ -53,7 +59,11 @@ var camera = new THREE.PerspectiveCamera(
   0.1,
   1000
 );
-camera.position.z = 170;
+camera.position.z = 170;//170
+
+if(window.innerWidth < 600){
+  camera.position.z = 270;//170
+  }
 
 // camera.rotation.z=150;
 
