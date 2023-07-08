@@ -6,11 +6,14 @@
 
 body {
     overflow-x: hidden;
-    animation: body 1s linear;
     background-color: #fff2f2;
     font-family: 'IBM Plex Sans', sans-serif;
-
-
+    width: 100%;
+}
+.main{
+   width: 100%;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 .container {
@@ -18,10 +21,11 @@ body {
     margin: auto;
 }
 
-
 .header {
     width: 100%;
     padding: 5px 0;
+   
+  
 }
 
 .headerWrper {
@@ -76,6 +80,11 @@ body {
     padding: 10px 15px;
     background-color: #fff;
     border-radius: 20px;
+    margin: 0;
+}
+
+.mobileCart{
+    display:none;
 }
 
 .cartWrper>div {
@@ -116,7 +125,7 @@ body {
 
 .herobgProduct {
     height: 100%;
-    width: 100%;
+    width: 100vw;
     z-index: -10;
     position: fixed;
     top: 0;
@@ -1222,6 +1231,22 @@ body {
         font-weight: 400;
         letter-spacing:15px!important;
     }
+    .cartWrper{
+        display: none;
+    }
+    .mobileCart{
+        display:block;
+        background: #fff;
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 475px) {
+    
+    .logo {
+        width: 140px;
+    }
 
 
 }
@@ -1311,6 +1336,15 @@ body {
         left: 0;
         z-index: 99;
     }
+
+.blockForMobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    gap: 10px;
+}
+
     .navWrper>ul{
         flex-direction: column;
         padding-top: 50px;
