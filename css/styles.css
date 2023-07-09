@@ -341,6 +341,7 @@ body {
     height: 35px;
     border-radius: 50%;
 
+
 }
 
 .lineandtext2 {
@@ -1518,6 +1519,74 @@ body {
         display: none;
     }
 
+
+
+
+    .div1{
+        top: 110px;
+        left: 190px;
+    
+    }
+    .lineandtext1{
+        top: 90px;
+        left: 220px;
+    }
+
+
+    .div2{
+        top: 220px;
+        left: 300px;
+    
+    }
+    .lineandtext2{
+        top: 210px;
+        left: 330px;
+        width: 100px;
+    }
+
+    .div3{
+        top: 210px;
+        left: 80px;
+    
+    }
+    .lineandtext3{
+        top: 200px;
+        left: -70px;
+        width: 150px;
+    }
+
+
+    .div4{
+        
+        top: 410px;
+        left: 45px;
+    
+    }
+    .lineandtext4{
+        top: 410px;
+        left: 75px;
+    }
+
+    .div5{
+        top: 360px;
+        left:300px;
+    }
+    .lineandtext5{
+        top: 340px;
+        left:100px;
+        width: 200px;
+    }
+
+    .div6{
+        top: 480px;
+        left: 175px;
+    }
+    .lineandtext6{
+        top: 475px;
+        left:205px;
+    }
+    
+
 }
 
 
@@ -1582,6 +1651,56 @@ body {
 }
 
 
+@media only screen and (min-width: 1024px) {
+    .builtImageWrper {
+        transform: translateX(0)!important;
+        margin-left: 10px;
+    }
+}
+
+
+@media only screen and (min-width: 1100px) {
+    .builtImageWrper {
+        margin-left: 40px!important;
+    }
+}
+
+
+@media only screen and (min-width: 1160px) {
+    .builtImageWrper {
+        margin-left: 60px!important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .builtImageWrper {
+        margin-left: 80px!important;
+    }
+}
+@media only screen and (min-width: 1220px) {
+    .builtImageWrper {
+        margin-left: 90px!important;
+    }
+}
+@media only screen and (min-width: 1240px) {
+    .builtImageWrper {
+        margin-left: 105px!important;
+    }
+}
+@media only screen and (min-width: 1270px) {
+    .builtImageWrper {
+        margin-left: 115px!important;
+    }
+}
+
+@media only screen and (min-width: 1290px) {
+    .builtImageWrper {
+        margin-left: 128px!important;
+    }
+}
+
+
+
 @media only screen and (min-width: 1300px) {
 
     .heroHeader>h1{
@@ -1607,75 +1726,329 @@ body {
 }
 
 
+@media only screen and (min-width: 1420px) {
+
+    .builtImageWrper {
+        transform: translateX(25px);
+        margin-left: 170px!important;
+    }
+}
+
+@media only screen and (min-width: 1450px) {
+
+    .builtImageWrper {
+        transform: translateX(25px);
+        margin-left: 200px!important;
+    }
+}
+
+
+
+
 @media only screen and (min-width: 1500px) {
 
     .builtImageWrper {
-        transform: translateX(110px)!important;
+        transform: translateX(105px)!important;
+        margin-left: 0px!important;
     }
     .builtImg {
         width: 680px;
     }
+
+
+
+
+    .div1{
+        top: 180px;
+        left: 307px;
+    
+    }
+    .lineandtext1{
+        top: 175px;
+        left: 340px;
+    }
+
+    .div2{
+        top: 345px;
+        left: 480px;
+    }
+
+    .lineandtext2{
+        top: 340px;
+        left:510px ;
+    }
+    .div3{
+        top:340px;
+        left:130px;
+    }
+    .lineandtext3{
+        top: 340px;
+        left: -185px;
+    }
+    .div4{
+        top: 650px;
+        left: 85px;
+    }
+    .lineandtext4{
+        top: 650px;
+        left: 115px;
+    }
+    .div5{
+        top: 570px;
+        left: 472px;
+    }
+    .lineandtext5{
+        top: 570px;
+        left: 20px;
+    }
+    .div6{
+        top:763px;
+        left: 273px;
+    }
+    .lineandtext6{
+        top: 763px;
+        left: 295px;
+    }
+
+
+
 }
 
  @media only screen and (min-width: 1700px) {
-    .builtImg {
-        width: 700px;
+
+    .builtImageWrper{
+        margin-left: 40px!important;
     }
+    .builtImg {
+        width: 800px;
+    }
+
+
+
+    .div1{
+        top: 210px;
+        left: 358px;
+        width: 60px;
+        height: 60px;
+    
+    }
+    .lineandtext1{
+        top: 210px;
+        left: 410px;
+    }
+
+    .div2{
+        top:400px;
+        left: 560px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .lineandtext2{
+        top: 400px;
+        left:610px ;
+    }
+    .div3{
+        top:400px;
+        left:140px;
+        width: 60px;
+        height: 60px;
+    }
+    .lineandtext3{
+        top: 410px;
+        left: -170px;
+    }
+    .div4{
+        top: 750px;
+        left: 85px;
+        width: 60px;
+        height: 60px;
+    }
+    .lineandtext4{
+        top: 770px;
+        left: 135px;
+    }
+    .div5{
+        top: 660px;
+        left: 550px;
+        width: 60px;
+        height: 60px;
+    }
+    .lineandtext5{
+        top: 670px;
+        left: 105px;
+    }
+    .div6{
+        top:893px;
+        left: 310px;
+        width: 60px;
+        height: 60px;
+    }
+    .lineandtext6{
+        top: 910px;
+        left: 365px;
+    }
+
+
+
+
+
 } 
+
+@media only screen and (min-width: 1760px) {
+
+    .builtImageWrper{
+        margin-left: 60px!important;
+    }
+}
 
 @media only screen and (min-width: 1800px) {
 
     .builtImageWrper {
-        transform: translateX(170px)!important;
+        transform: translateX(110px)!important;
     }
-    .builtImg {
-        width:780px;
+   
+} 
+
+@media only screen and (min-width: 1860px) {
+
+    .builtImageWrper {
+        transform: translateX(120px)!important;
     }
+   
 } 
 
 @media only screen and (min-width: 1900px) {
 
     .builtImageWrper {
-        transform: translateX(170px)!important;
+        transform: translateX(130px)!important;
     }
-    .builtImg {
-        width:820px;
-    }
+  
 } 
 
+@media only screen and (min-width: 1980px) {
+
+    .builtImageWrper {
+        transform: translateX(140px)!important;
+    }
+
+    
+  
+} 
+
+
+@media only screen and (min-width: 2000px) {
+
+    .builtImageWrper {
+        transform: translateX(150px)!important;
+    }
+  
+}
+
+@media only screen and (min-width: 2040px) {
+
+    .builtImageWrper {
+        transform: translateX(160px)!important;
+    }
+    
+  
+}
 @media only screen and (min-width: 2100px) {
 
     .builtImageWrper {
-        transform: translateX(220px)!important;
+        transform: translateX(84px)!important;
     }
+    .builtImg {
+        width: 960px;
+    }
+
+
+
+    .div1{
+        top: 250px;
+        left: 425px;
+        width: 60px;
+        height: 60px;
+    
+    }
+    .lineandtext1{
+        top: 260px;
+        left: 460px;
+    }
+
+    .div2{
+        top:480px;
+        left: 680px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .lineandtext2{
+        top: 480px;
+        left:720px ;
+    }
+    .div3{
+        top:480px;
+        left:180px;
+        width: 60px;
+        height: 60px;
+    }
+    .lineandtext3{
+        top: 490px;
+        left: -130px;
+    }
+    .div4{
+        top: 910px;
+        left: 115px;
+        width: 60px;
+        height: 60px;
+    }
+    .lineandtext4{
+        top: 920px;
+        left: 150px;
+    }
+    .div5{
+        top: 800px;
+        left: 660px;
+        width: 60px;
+        height: 60px;
+    }
+    .lineandtext5{
+        top: 810px;
+        left: 220px;
+    }
+    .div6{
+        top:1076px;
+        left: 380px;
+        width: 60px;
+        height: 60px;
+    }
+    .lineandtext6{
+        top: 1080px;
+        left: 405px;
+    }
+    
 }
 
 @media only screen and (min-width: 2200px) {
 
     .builtImageWrper {
-        transform: translateX(190px)!important;
+        transform: translateX(110px)!important;
     }
-    .builtImg {
-        width:920px;
-    }
+   
 }
 @media only screen and (min-width: 2300px) {
 
     .builtImageWrper {
-        transform: translateX(200px)!important;
+        transform: translateX(130px)!important;
     }
-    .builtImg {
-        width:950px;
-    }
+    
 }
 
 @media only screen and (min-width: 2400px) {
 
     .builtImageWrper {
-        transform: translateX(200px)!important;
-    }
-    .builtImg {
-        width:1000px;
+        transform: translateX(150px)!important;
     }
 }
 
@@ -1683,9 +2056,6 @@ body {
 @media only screen and (min-width: 2500px) {
 
     .builtImageWrper {
-        transform: translateX(200px)!important;
-    }
-    .builtImg {
-        width:1100px;
+        transform: translateX(170px)!important;
     }
 }
