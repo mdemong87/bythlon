@@ -10,9 +10,10 @@ function onScroll() {
 
   // Calculate the rotation amount based on the scroll position
   const rotationX = Math.PI * scrollY / 100;
+  const contro=rotationX/2;
 
   // Apply the rotation to the object
-  scene.rotation.x =rotationX/2;
+  scene.rotation.x =contro;
 
   if(scrollY === 0){
     scene.rotation.x=2.60;
@@ -21,19 +22,22 @@ function onScroll() {
 
   if (scrollY > 340) {
     scene.rotation.x =0;
-    scene.rotation.z=190.03;
+    scene.rotation.z=190.03;//190.03
     scene.rotation.y=49.890;
-    camera.rotation.z=0;
-    ThreeModel.style.transform="translate(20%)";
-    ThreeModel.style.transition=".70s";
+    camera.rotation.z=contro;//0
+    // ThreeModel.style.marginTop="20px";
+
+    if( contro > 6.010){
+      camera.rotation.z=0;//0
+    }
   }else{
     scene.rotation.z=0;
     scene.rotation.y=0;
     camera.rotation.z=109.96;
-    ThreeModel.style.transform="translate(0%)";
+    ThreeModel.style.marginTop="0px";
   }
 
-  if(scrollY > 250 && window.innerWidth < 600){
+  if(scrollY > 250 && window.innerWidth < 768){
     ThreeModel.style.display="none";
   }else{
     ThreeModel.style.display="block";

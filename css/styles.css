@@ -7,13 +7,22 @@
 body {
     overflow-x: hidden;
     background-color: #fff2f2;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
     width: 100%;
 
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
 }
+
+p{
+    font-family:"IBM Plex Sans"!important;
+}
+
+a{
+    font-family:"IBM Plex Sans"!important;
+}
+
 .main{
    width: 100%;
     margin: 0;
@@ -21,7 +30,7 @@ body {
 }
 
 .container {
-    width: 85%;
+    width: 95%;
     max-width: 1170px;
     margin: auto;
 }
@@ -29,6 +38,11 @@ body {
 .header {
     width: 100%;
     padding: 5px 0;
+    position: fixed;
+    top: 0px;
+    height:76px;
+    z-index: 100;
+    background-color: #fff2f2;
    
   
 }
@@ -41,7 +55,8 @@ body {
 }
 
 .logo {
-    width: 180px;
+    width: 158px;
+    height: 46px;
 }
 .berJustshowmobile{
     display: none;
@@ -58,11 +73,14 @@ body {
 .navWrper>ul {
     display: flex;
     align-items: center;
-    grid-gap: 25px;
-    justify-content: center;
+    grid-gap:8px;
+    justify-content:space-between;
     list-style: none;
     background-color: #fff;
-    border-radius: 20px;
+    border-radius: 500px;
+    width: 376px;
+    height: 43px;
+    border: 1px solid #FFFFFF;
 }
 
 .navLink {
@@ -112,7 +130,8 @@ body {
     justify-content: end;
     align-items: center;
     position: relative;
-    height: 70vh;
+    height: 450px;
+    margin-top: 76px;
 }
 
 
@@ -121,12 +140,16 @@ body {
     width: 100%;
     text-align: center;
 }
-
-.heroHeader>h1 {
+.bythlonHeader{
     color: #fc481d;
     z-index: 1;
-    text-align: center;
-    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bythlonHeader>span{
+    font-weight: 400px!important;
+    font-size: 280px;
 }
 
 .herobgProduct {
@@ -136,6 +159,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    transform: translateX(20%);
 }
 
 
@@ -148,9 +172,8 @@ body {
 }
 
 .offheading {
-    font-size: 80px;
-    text-transform: uppercase;
-    font-weight: 500;
+    padding-top: 15px!important;
+    padding-bottom: 15px!important;
 }
 
 .imageAndTopHeaderwtp {
@@ -173,25 +196,28 @@ body {
 .incresseheader {
     color: rgb(61, 61, 61);
     font-weight: 500;
+    font-size: 25px;
 }
 
 .discoutnbtnGroup {
     display: flex;
     align-items: center;
-    grid-gap: 20px;
+    grid-gap: 8px;
+    margin: 10px 0px;
 }
 
 
 .shopnowbtn {
-    padding: 10px 15px;
-    background: black;
+    padding: 12px 25px;
+    background: rgb(0, 0, 0);
     border-radius: 25px;
     border: none;
     outline: none;
-    color: #fff;
+    color: #FFFFFF;
     font-size: 19px;
     margin: 20px 0px;
     cursor: pointer;
+    font-weight: 400!important;
 }
 
 .introvedio {
@@ -239,7 +265,7 @@ body {
 /* build for batter cycling css start from here */
 .buildforbatterCycling {
     background: #fc481d;
-    color: #fff;
+    color: #EEEEED!important;
     z-index: 100;
 }
 
@@ -247,7 +273,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 30px;
 }
 
 .buildLearnmorebtn {
@@ -263,11 +288,27 @@ body {
 }
 
 .buildingheader {
-    font-size: 80px;
-    font-weight: 500;
+    font-size: 87px;
+    font-weight: 450;
+    text-transform: uppercase;
+    padding-top: 70px;
+    line-height: 83px;
+    word-spacing:-30px!important;
+}
+.pochisparsent{
+    font-weight:700!important;
+}
+.beaterCycingScrool{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0px;
+    margin-top: 50px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #EEEEED!important;
     text-transform: uppercase;
 }
-
 .builtImg {
     height: 100%;
     width: 570px;
@@ -483,7 +524,7 @@ body {
 
 /* what makes section css code start from here */
 .whatmakes {
-    background: #fff2f2;
+    background:#EEEEED;
     padding: 30px 0px;
 }
 
@@ -498,18 +539,17 @@ body {
 }
 
 .whatmakesheadeing {
-    font-size: 80px;
-    font-weight: 500;
     color: #fc481d;
 }
 
 .swiper {
-    width: 600px;
-    height: 400px;
+    width: 630px;
+    height: 465px;
 }
 
 .swiperImg {
     height: 100%;
+    width: 100%;
 }
 
 .swiper-button-prev {
@@ -733,9 +773,9 @@ body {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -743,17 +783,17 @@ body {
     text-align: left;
 }
 
-.splide__slide:hover {
-    background: #ffeded;
-}
-
 .splide__slide:hover .star {
     color: #fc481d !important;
 }
 
 
+.splide__slide:hover .reviewHead {
+    color: #fc481d !important;
+}
+
 .star {
-    font-size: 30px;
+    font-size: 25px;
     color: #ddd;
 }
 
@@ -770,25 +810,22 @@ body {
     border-radius: 12px;
 }
 
-.feedbackWrpinreview>div:hover .reviewHead {
+/* .feedbackWrpinreview>div:hover .reviewDis {
     color: black !important;
-}
-
-.feedbackWrpinreview>div:hover .reviewDis {
-    color: black !important;
-}
+} */
 
 
 .reviewHead {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 500;
     padding: 13px 0px;
-    color: black;
+    /* color: black; */
+    word-spacing: -10px!important;
 }
 
 .reviewDis {
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 400;
     color: rgb(138, 138, 138);
 }
 
@@ -804,13 +841,14 @@ body {
 /* sign up section start from here css code */
 .signUpSection {
     background: #eeebeb;
-    padding: 30px 0px;
+    padding: 50px 0px;
 }
 
 .SignupWrper>h1 {
-    font-size: 26px;
+    font-size: 32px!important;
     color: black;
     font-weight: 500;
+    word-spacing: -5px;
 }
 
 .SignupWrper>p {
@@ -837,7 +875,7 @@ body {
     border-radius: 15px;
     cursor: pointer;
     margin-top: 25px;
-    padding: 8px;
+    padding: 10px 20px;
     font-size: 20px;
 }
 
@@ -853,13 +891,9 @@ body {
 }
 
 .footerHeader {
-    text-align: center;
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 400;
+  color: #EEEEED!important;
 }
-.footerHeadertow{
-    display: none;
-}
+
 
 .allpolicyWrp {
     display: flex;
@@ -1232,13 +1266,6 @@ body {
     .cartWrper{
         margin-left: 50px;
     }
-    .footerHeadertow{
-        display: block;
-        font-size: 30px!important;
-        text-align: center;
-        font-weight: 400;
-        letter-spacing:15px!important;
-    }
     .cartWrper{
         display: none;
     }
@@ -1246,6 +1273,11 @@ body {
         display:block;
         background: #fff;
     }
+
+    .bythlonHeader>span{
+        font-weight: 400px!important;
+        font-size: 70px!important;
+    } 
 }
 
 
@@ -1254,6 +1286,16 @@ body {
     
     .logo {
         width: 140px;
+    }
+
+
+    .bythlonHeader>span{
+        font-weight: 400px!important;
+        font-size: 80px!important;
+    } 
+
+    .beaterCycingScrool{
+        font-size: 7px;
     }
 
 
@@ -1271,13 +1313,7 @@ body {
         flex-direction: column;
         align-items: center;
     }
-    .footerHeadertow{
-        display: block;
-        font-size: 65px!important;
-        text-align: center;
-        font-weight: 400;
-        letter-spacing:25px;
-    }
+
 
     .offheading {
         font-size: 50px!important;
@@ -1342,33 +1378,18 @@ body {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (min-width:425px) {
 
 
-    .heroHeader>h1{
-        overflow-x: hidden;
-        font-size: medium!important;
-        display: none;
-    }
-    .heroHeader>h3{
-        color: #fc481d;
-    }
-    .footerHeader{
-        overflow-x: hidden;
-        border: 1px solid #fff;
-        display: none;
-    }
-    .footerHeadertow{
-        display: block;
-        font-size: 90px;
-        text-align: center;
-        font-weight: 400;
-        letter-spacing:30px;
+    .beaterCycingScrool{
+        font-size: 10px;
     }
 
-    /* .herobgProduct{
-        display: none;
-    } */
+    .bythlonHeader>span{
+        font-weight: 400px!important;
+        font-size: 140px!important;
+    } 
+
     .reviewTopWrper{
         flex-direction: column;
         gap: 10px;
@@ -1592,35 +1613,31 @@ body {
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) and (min-width:769px) {
 
-    .heroHeader>h1{
-        font-size: 117px!important;
-        letter-spacing:27px!important;
-    }
-    .footerHeader{
-        font-size: 117px!important;
-        letter-spacing:27px!important;
-    }
+    .bythlonHeader>span{
+        font-weight: 400px!important;
+        font-size: 170px!important;
+    }  
+    
     .allpolicyWrp>div>ul{
         flex-direction: column;
+    }
+    .beaterCycingScrool{
+        font-size: 14px;
     }
 }
 
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px)and (min-width:901px) {
 
-    .heroHeader>h1{
-        font-size: 135px!important;
-        letter-spacing:45px;
-    }
-    .footerHeader{
-        font-size: 135px!important;
-        letter-spacing:45px;
-    }
-
+    .bythlonHeader>span{
+        font-weight: 400px!important;
+        font-size: 200px!important;
+    }  
+  
 
     .buildingforcyclingWrper{
         flex-direction: column;
@@ -1634,19 +1651,22 @@ body {
         align-items: center;
         text-align: center;
     }
+    .beaterCycingScrool{
+        font-size: 16px;
+    }
 }
 
 
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1300px) and (min-width:1025px) {
 
-    .heroHeader>h1{
-        font-size: 160px!important;
-        letter-spacing:60px;
-    }
-    .footerHeader{
-        font-size: 160px;
-        letter-spacing:60px;
+
+    .bythlonHeader>span{
+        font-weight: 400px!important;
+        font-size: 250px;
+    }    
+    .beaterCycingScrool{
+        font-size: 20px;
     }
 }
 
@@ -1656,6 +1676,8 @@ body {
         transform: translateX(0)!important;
         margin-left: 10px;
     }
+
+
 }
 
 
@@ -1707,10 +1729,7 @@ body {
         font-size: 200px!important;
         letter-spacing:80px;
     }
-    .footerHeader{
-        font-size: 200px;
-        letter-spacing:80px;
-    }
+
 
 
     .builtImageWrper {
